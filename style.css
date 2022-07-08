@@ -1,0 +1,46 @@
+#header{
+	background-color: #dcdcdc;
+	width: 980px;
+	height: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.logo{
+	width: 182px;
+	height: 67px;
+	float: left;
+	padding-left: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.contacts{
+	width: auto;
+	height: auto;
+	float: right;
+	padding-right: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #767676;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 100;
+	overflow: auto;
+}
+
+@font-face {
+
+  font-family: "Open Sans";
+
+  src: url("opensans.woff2") format("woff2");
+
+}
+
+body { 
+
+  font-family: "Open Sans", sans-serif; 
+
+}
