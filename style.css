@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 @font-face { 
     font-family: "PT Sans";
     src: url(PT Sans.eot?) format("eot"),
@@ -7,6 +56,13 @@
 
 body { 
   font-family: "PT Sans", sans-serif; 
+}
+
+#header_one{
+	background-color: #dcdcdc;
+	height: auto;
+	margin: 0 auto;
+	overflow: auto;
 }
 
 #header{
@@ -42,9 +98,16 @@ body {
 	overflow: auto;
 }
 
+#menu_one{
+	background-color: #777777;
+	height: auto;
+	margin: 0 auto;
+	overflow: auto;
+}
+
 #menu{
 	background-color: #777777;
-	width: 980px;
+	width: auto;
 	height: auto;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -53,34 +116,41 @@ body {
 }
 
 #list{
-	width: 720px;
+	width: 980px;
 	height: auto;
-	padding-right: 10px;
-	padding-left: 10px;
 	margin: 0 auto;
 	overflow: auto;
 	font-family: "PT Sans", sans-serif; 
     font-size: 20px;
 	line-height: 30px;
 	font-weight: 100;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	overflow: auto;
 }
 
 #menu ul li {
+	display: inline-block;
 	float: left;
+	margin: 0;
 }
 
 #menu ul li a {
+	width: auto;
 	color: #ffffff;
 	text-decoration: none;
-	text-align: justify;
-	margin-left: 10 px;
-	margin-right: 10 px;
+	overflow: hidden;
 }
 
 .menu{
+	min-width: min-content;
+	display: block;
 	list-style-type: none;
 	color: #ffffff;
+	padding-top: 10px;
+	margin: 0 auto;
+	overflow: auto;
+	padding-left: 200px;
 }
 
 .menu a:hover {
@@ -95,19 +165,24 @@ body {
 
 #slider{
 	background-color: #f8f8f8;
-	width: 980px;
-	height: 250px;
-	padding-right: 10px;
-	padding-left: 10px;
+	height: 350px;
 	margin: 0 auto;
 	overflow: hidden;
-	position: relative;
 }
 
 .slider{
+	width: 1582px;
+	height: 520px;
+	display: block;
 	margin: 0 auto;
-	position:absolute;
-	bottom:0;
+	margin-top: -100px;
+}
+
+#content_one{
+	height: auto;
+	margin: 0 auto;
+	overflow: auto;
+	padding-bottom: 200px;
 }
 
 #content{
@@ -116,5 +191,131 @@ body {
 	padding-right: 10px;
 	padding-left: 10px;
 	margin: 0 auto;
+}
+
+.news{
+	width: 300px;
+	height: auto;
+	float: left;
+	background-color: #777777;
+	margin-top: 30px;
 	overflow: auto;
+	padding-right: 20px;
+	padding-left: 10px;
+	margin-right: 30px;
+}
+
+.head{
+	font-size: 40px;
+	font-weight: 600;
+	padding-top: 20px;
+}
+
+.news ul{
+	color: white;
+	list-style-type: none;
+	padding: 0; 
+    margin-left: 20px;
+    line-height: 22px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    margin-right: 25px;
+}
+
+.news a{
+	color: white;
+	text-decoration: none;
+	font-style: italic;
+}
+
+.arhive{
+	text-align: right;
+	text-decoration: underline;
+}
+
+.company{
+	width: 550px;
+	height: auto;
+	float: right;
+	margin-left: 30px;
+	margin-top: 30px;
+	overflow: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.pixel{
+	color: #767676;
+	font-size: 40px;
+}
+
+.content{
+	color: #767676;
+	line-height: 22px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+#footer_one{
+	background-color: #777777;
+	height: auto;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+#footer{
+	width: 980px;
+	height: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.footer_left{
+	float: left;
+	color: #ffffff;
+	line-height: 22px;
+    font-size: 14px;
+    margin-right: 200px;
+    padding-bottom: 50px;
+}
+
+.footer_center{
+	float: left;
+	color: #ffffff;
+	line-height: 22px;
+    font-size: 14px;
+    margin-right: 150px;
+    padding-bottom: 50px;
+    list-style-type: none;
+}
+
+.footer_center a{
+	color: white;
+}
+
+.company_logo{
+	width: 40px;
+	height: 41px;
+	float: left;
+	margin-right: 10px;
+	padding-bottom: 60px;
+	padding-top: 10px;
+}
+
+.footer_right{
+	float: right;
+	color: #ffffff;
+	line-height: 22px;
+    font-size: 14px;
+}
+
+.footer_right a{
+	color: white;
+}
+
+.footer_right p{
+	float: left;
 }
